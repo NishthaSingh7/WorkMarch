@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Data</title>
+  </head>
+  <body>
+    <h1>Student Data</h1>
+    <div id="students"></div>
+
+    <script>
+      fetch("/students")
+        .then((response) => response.json())
+        .then((students) => {
+          const studentList = document.getElementById("students");
+          students.forEach((student) => {
+            const studentDiv = document.createElement("div");
+            studentDiv.innerHTML = `<strong>Name:</strong> ${
+              student.name
+            } <br> <strong>Student Number:</strong> ${
+              student.studentNumber
+            } <br> <strong>Email:</strong> ${
+              student.email
+            } <br> <strong>Courses:</strong> ${student.courses.join(
+              ", "
+            )} <br> <strong>GPA:</strong> ${student.gpa}`;
+            studentList.appendChild(studentDiv);
+          });
+        })
+        .catch((error) => console.error(error));
+    </script>
+  </body>
+</html>
