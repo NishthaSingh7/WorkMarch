@@ -1,0 +1,9 @@
+com/student/infosystem/studentinfosystem/service/impl/StudentServiceImpl.class
+com/student/infosystem/studentinfosystem/repository/StudentRepository.class
+com/student/infosystem/studentinfosystem/util/ObjectMapperUtils.class
+com/student/infosystem/studentinfosystem/service/StudentService.class
+com/student/infosystem/studentinfosystem/StudentinfosystemApplication.class
+com/student/infosystem/studentinfosystem/Hello.class
+com/student/infosystem/studentinfosystem/model/Student.class
+com/student/infosystem/studentinfosystem/controller/StudentRestController.class
+com/student/infosystem/studentinfosystem/dto/StudentDTO.class
